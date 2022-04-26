@@ -277,9 +277,9 @@ function go(data) {
 
   var hp = new HtmlPrint(ul);
   w.start(hp.visit.bind(hp, hp.ul));
-  // var pp = new PrettyPrint();
-  // w.start(pp.visit.bind(pp));
-  // console.log(pp.out);
+  var pp = new PrettyPrint();
+  w.start(pp.visit.bind(pp));
+  console.log(pp.out);
 
   // Expand first level.
   document.querySelector('.expando > span').click();
